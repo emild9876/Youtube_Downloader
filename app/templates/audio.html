@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}audio{% endblock %}
+
+{% block main %}
+
+<div>
+    <h3>Input Youtube song url that you want to download</h3>
+    <form method="post">
+
+        <textarea name="Youtube URL"
+                  placeholder="Youtube URL"
+                  rows="1"
+                  cols="50"
+                  >{{ request.form['content'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
